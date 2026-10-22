@@ -1,0 +1,14 @@
+{
+  "metodo": "OUTLOOK",
+  "smtp_host": "smtp.office365.com",
+  "smtp_port": 587,
+  "smtp_usuario": "",
+  "smtp_password": "ximena26042007",
+  "remitente_nombre": "Dirección Comercial Corporativa",
+  "asunto": "Información exclusiva para {nombre}",
+  "saludo": "Estimado(a) {nombre},",
+  "cuerpo": "Prueba de cuerpo con {ubicacion}",
+  "cuerpo_destacado": "Destacado de prueba",
+  "cuerpo_cierre": "Cierre de prueba",
+  "correo_test": "tu_correo@empresa.com"
+}

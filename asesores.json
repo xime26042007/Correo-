@@ -1,0 +1,65 @@
+{
+  "bogota": {
+    "nombre": "Carlos Andrés Mendoza",
+    "cargo": "Asesor Senior Regional Centro",
+    "correo": "carlos.mendoza@empresa.com",
+    "telefono": "+57 310 123 4567",
+    "ciudad_display": "Bogotá D.C."
+  },
+  "cundinamarca": {
+    "nombre": "Carlos Andrés Mendoza",
+    "cargo": "Asesor Senior Regional Centro",
+    "correo": "carlos.mendoza@empresa.com",
+    "telefono": "+57 310 123 4567",
+    "ciudad_display": "Bogotá y Cundinamarca"
+  },
+  "medellin": {
+    "nombre": "Laura Sofía Restrepo",
+    "cargo": "Asesora Senior Regional Antioquia",
+    "correo": "laura.restrepo@empresa.com",
+    "telefono": "+57 311 234 5678",
+    "ciudad_display": "Medellín"
+  },
+  "antioquia": {
+    "nombre": "Laura Sofía Restrepo",
+    "cargo": "Asesora Senior Regional Antioquia",
+    "correo": "laura.restrepo@empresa.com",
+    "telefono": "+57 311 234 5678",
+    "ciudad_display": "Antioquia"
+  },
+  "cali": {
+    "nombre": "Javier Alejandro Ortiz",
+    "cargo": "Asesor Senior Regional Occidente",
+    "correo": "javier.ortiz@empresa.com",
+    "telefono": "+57 312 345 6789",
+    "ciudad_display": "Cali y Valle del Cauca"
+  },
+  "valle": {
+    "nombre": "Javier Alejandro Ortiz",
+    "cargo": "Asesor Senior Regional Occidente",
+    "correo": "javier.ortiz@empresa.com",
+    "telefono": "+57 312 345 6789",
+    "ciudad_display": "Valle del Cauca"
+  },
+  "barranquilla": {
+    "nombre": "Mariana Gómez Delgado",
+    "cargo": "Asesora Comercial Zona Costa Norte",
+    "correo": "mariana.gomez@empresa.com",
+    "telefono": "+57 315 456 7890",
+    "ciudad_display": "Barranquilla y Costa"
+  },
+  "bucaramanga": {
+    "nombre": "Hernán Darío Silva",
+    "cargo": "Asesor Comercial Santanderes",
+    "correo": "hernan.silva@empresa.com",
+    "telefono": "+57 316 567 8901",
+    "ciudad_display": "Bucaramanga y Santander"
+  },
+  "default": {
+    "nombre": "Equipo de Asesoría Corporativa",
+    "cargo": "Atención y Servicio al Cliente Nacional",
+    "correo": "contacto@empresa.com",
+    "telefono": "+57 (601) 800 0000",
+    "ciudad_display": "Nacional"
+  }
+}

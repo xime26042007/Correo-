@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicado Corporativo</title>
+  <style>
+    /* Estilos compatibles con Microsoft Outlook y clientes web/móvil */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      color: #333333;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+    td {
+      padding: 0;
+    }
+    img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+      display: block;
+    }
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #f4f6f9;
+      padding: 30px 0;
+    }
+    .container {
+      max-width: 620px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      border: 1px solid #e5e9f0;
+    }
+    .content {
+      padding: 35px 35px 25px 35px;
+    }
+    h1 {
+      color: #0f2d59;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #4a5568;
+      font-size: 15px;
+      line-height: 1.65;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+    .highlight-box {
+      background-color: #f0f7ff;
+      border-left: 4px solid #0066cc;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    .highlight-box p {
+      margin: 0;
+      font-weight: 500;
+      color: #0b4582;
+    }
+    /* Tarjeta del Asesor Asignado */
+    .advisor-card {
+      background: linear-gradient(135deg, #f8faff 0%, #eef4fc 100%);
+      border: 1px solid #d4e3f8;
+      border-radius: 8px;
+      padding: 22px;
+      margin: 28px 0 15px 0;
+    }
+    .advisor-title {
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #0066cc;
+      margin-bottom: 8px;
+    }
+    .advisor-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a202c;
+      margin-bottom: 4px;
+    }
+    .advisor-role {
+      font-size: 14px;
+      color: #4a5568;
+      margin-bottom: 12px;
+    }
+    .advisor-contact {
+      font-size: 14px;
+      color: #2d3748;
+      line-height: 1.8;
+    }
+    .advisor-contact a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    /* Pie de página */
+    .footer {
+      background-color: #202b38;
+      color: #a0aec0;
+      padding: 25px 35px;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .footer a {
+      color: #cbd5e0;
+      text-decoration: underline;
+    }
+    .footer p {
+      color: #a0aec0;
+      font-size: 12px;
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <center class="wrapper">
+    <table class="container" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+      
+      <!-- BANNER / IMAGEN SUPERIOR (INCRUSTADA VÍA CID) -->
+      <!-- {TAG_IMAGEN_BANNER} se reemplazará automáticamente en Python si existe imagen -->
+      {TAG_IMAGEN_BANNER}
+
+      <!-- CUERPO DEL CORREO -->
+      <tr>
+        <td class="content">
+          <h1>{saludo}</h1>
+
+          <p>
+            {cuerpo}
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              {cuerpo_destacado}
+            </p>
+          </div>
+
+          <p>
+            {cuerpo_cierre}
+          </p>
+
+          <!-- TARJETA DEL ASESOR ASIGNADO DINÁMICAMENTE -->
+          <div class="advisor-card">
+            <div class="advisor-title">Tu Asesor Asignado en {asesor_zona}</div>
+            <div class="advisor-name">{asesor_nombre}</div>
+            <div class="advisor-role">{asesor_cargo}</div>
+            <div class="advisor-contact">
+              📞 <strong>Teléfono / WhatsApp:</strong> <a href="tel:{asesor_telefono}">{asesor_telefono}</a><br>
+              ✉️ <strong>Correo electrónico:</strong> <a href="mailto:{asesor_correo}">{asesor_correo}</a>
+            </div>
+          </div>
+
+          <p style="margin-top: 24px; font-size: 14px; color: #718096;">
+            Si tienes dudas o deseas coordinar una reunión virtual o presencial, puedes responder directamente a este mensaje o comunicarte con tu asesor asignado.
+          </p>
+          
+          <p style="margin-bottom: 0;">
+            Atentamente,<br>
+            <strong>Dirección Comercial Corporativa</strong>
+          </p>
+        </td>
+      </tr>
+
+      <!-- FOOTER / PIE DE PÁGINA -->
+      <tr>
+        <td class="footer">
+          <p>Este correo electrónico fue enviado a {correo} como parte de nuestras comunicaciones corporativas.</p>
+          <p>Aviso de Confidencialidad: La información contenida en este mensaje y sus archivos adjuntos es de carácter confidencial.</p>
+          <p>&copy; 2026 Todos los derechos reservados.</p>
+        </td>
+      </tr>
+
+    </table>
+  </center>
+</body>
+</html>
