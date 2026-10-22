@@ -1,0 +1,18 @@
+# Entornos virtuales
+.venv/
+venv/
+ENV/
+
+# Python cache y bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de base de datos y logs generados en ejecucion
+historial_envios.csv
+
+# Archivos temporales de Office y del sistema
+~$*.xlsx
+~$*.docx
+.DS_Store
+Thumbs.db
